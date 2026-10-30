@@ -44,13 +44,7 @@
   --font-size-lg: 17px;  --font-size-xl: 20px;
   --font-size-2xl: 24px; --font-size-3xl: 30px;
 }
-/* 强制隐藏 Netlify 徽章 */
-[data-netlify-badge], 
-#netlify-badge,
-iframe[src*="netlify"],
-div[style*="position: fixed"][style*="bottom: 0"] {
+/* 精准干掉 Netlify 徽章 */
+#nl-badge-frame {
     display: none !important;
-    visibility: hidden !important;
-    opacity: 0 !important;
-    pointer-events: none !important;
 }
